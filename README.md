@@ -33,7 +33,7 @@ It is comparable to *Meterpreter* with *Autoroute + Socks4a*, but more stable an
 
 ## Use case
 
-You compromised a Windows / Linux / Mac server during your external audit. This server is located on a LAN network and
+You compromised a Windows / Linux / Mac server during your external audit. This server is located inside a LAN network and
 you want to establish connections to other machines on this network.
 
 **Ligolo** can setup a tunnel to access internal server's resources.
