@@ -127,7 +127,7 @@ Once the connection is established, set the following parameters on the ProxyCha
 ```
 [ProxyList]
 # add proxy here ...
-# meanwile
+# meanwhile
 # defaults set to "tor"
 socks5     127.0.0.1 1080
 ```
