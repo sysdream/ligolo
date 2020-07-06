@@ -138,11 +138,6 @@ func (ligolo LigoloRelay) handleLocalConnection(conn net.Conn) {
 	go relay(conn, stream)
 	go relay(stream, conn)
 
-	select {
-	case <-ligolo.Session.CloseChan():
-		logrus.WithFields(logrus.Fields{"remoteaddr": ligolo.Session.RemoteAddr().String()}).Println("Connection closed.")
-		return
-	}
 }
 
 // Handle new ligolo connections
