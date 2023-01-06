@@ -19,7 +19,7 @@ help: ## Show Help
 
 dep: ## Install dependencies
 	go get -d -v ./...
-	go get -u github.com/mitchellh/gox
+	go install -v github.com/mitchellh/gox@latest
 
 certs: ## Build SSL certificates
 	mkdir certs
@@ -35,5 +35,5 @@ build-all: ## Build for every architectures.
 
 clean:
 	rm -rf certs
-	rm bin/$(LIGOLO_BINARY)_*
-	rm bin/$(RELAY_BINARY)_*
+	rm bin/$(LIGOLO_BINARY)*
+	rm bin/$(RELAY_BINARY)*
