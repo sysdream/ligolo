@@ -19,7 +19,7 @@ help: ## Show Help
 
 dep: ## Install dependencies
 	go get -d -v ./...
-	go get -u github.com/mitchellh/gox
+	go install -v github.com/mitchellh/gox@latest
 
 certs: ## Build SSL certificates
 	mkdir certs
