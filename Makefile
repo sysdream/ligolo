@@ -35,5 +35,5 @@ build-all: ## Build for every architectures.
 
 clean:
 	rm -rf certs
-	rm bin/$(LIGOLO_BINARY)_*
-	rm bin/$(RELAY_BINARY)_*
+	rm bin/$(LIGOLO_BINARY)*
+	rm bin/$(RELAY_BINARY)*
